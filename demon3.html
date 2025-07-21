@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="estilo3.css">
+<body>
+     <form class="form-dni" action="#" method="post" onsubmit="return validarDNI()">
+    <h2>VERIFICAR DNI</h2>
+
+    <label for="dni">Número de DNI:</label>
+    <input type="text" id="dni" name="dni" pattern="[0-9]{8}" maxlength="8" required placeholder="Ej: 12345678">
+    <div id="error" class="error"></div>
+
+    <button type="submit">Enviar</button>
+  </form>
+  <script>
+    function validarDNI() {
+      const dni = document.getElementById('dni').value;
+      const errorDiv = document.getElementById('error');
+
+      if (!/^\d{8}$/.test(dni)) {
+        errorDiv.textContent = "El DNI debe tener exactamente 8 dígitos.";
+        return false;
+      }
+
+      errorDiv.textContent = "";
+      return true;
+    }
+  </script>
+
+
+</body>
+</html>

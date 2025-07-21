@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="estilo5.css">
+<body>
+    <form class="form-pedido" action="#" method="post">
+    <h2>PEDIDOS DE TORTAS</h2>
+
+    <label for="nombre">Nombre del cliente:</label>
+    <input type="text" id="nombre" name="nombre" required />
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" required placeholder="Ej: 987654321"/>
+
+   
+
+    <label for="tipo">Tipo de torta:</label>
+    <select id="tipo" name="tipo" required>
+      <option value="">Seleccione una opción</option>
+      <option value="chocolate">Chocolate</option>
+      <option value="vainilla">Vainilla</option>
+      <option value="zanahoria">Zanahoria</option>
+      <option value="redvelvet">Red Velvet</option>
+    </select>
+
+    <label for="tamano">Tamaño:</label>
+    <select id="tamano" name="tamano" required>
+      <option value="">Seleccione una opción</option>
+      <option value="pequeno">Pequeña (6 porciones)</option>
+      <option value="mediano">Mediana (10 porciones)</option>
+      <option value="grande">Grande (15+ porciones)</option>
+    </select>
+
+    <label for="fecha">Fecha de entrega:</label>
+    <input type="date" id="fecha" name="fecha" required />
+
+    <label for="comentarios">Comentarios / Decoración especial:</label>
+    <textarea id="comentarios" name="comentarios" rows="4" placeholder="Especificar colores, nombres, etc."></textarea>
+
+    <button type="submit">Enviar Pedido</button>
+    <p class="note">* Nos comunicaremos contigo para confirmar tu pedido.</p>
+  </form>
+
+    
+</body>
+</html>

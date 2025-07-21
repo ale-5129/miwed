@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+  header, footer {
+    background-color: #edbdbd;
+    color: rgb(15, 9, 9);
+    text-align: center;
+    padding: 1em;
+  }
+
+  main {
+    padding: 20px;
+    background-color: white;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+
+  table, th, td {
+    border: 1px solid #aaa;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: center;
+  }
+
+  form {
+    background: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ccc;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+  }
+
+  img {
+    max-width: 100%;
+    height:auto;
+}
